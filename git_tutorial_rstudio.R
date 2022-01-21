@@ -7,19 +7,18 @@
 #
 ##############################################
 
-
-
+# Packges selected for installation
 # install.packages("usethis")
 # install.packages("fs")
 library(usethis)
 library('fs')
 
-
+# files needed for lecture found on OSF under R directory or github: 
+# https://github.com/tpyork/hgen-612/tree/main/R/hgen-612_git-tutorial
 
 # Code to submit to terminal (submit to terminal: alt+ctrl+enter)
 
-## From Introduce yourself to Git
-
+## From Ch 7: Introduce Yourself to Git
 ### check username
 git config --global --list
 git config --global user.name 'christiane-morecock' # username from github
@@ -51,12 +50,17 @@ git checkout (first 7 characters of SHA) app/geyser.R
 
 
 ### Talk to github
-git remote add origin git@github.com:christiane-morecock/ta_612.git
+git remote add origin git@github.com:___username____/__reponame__.git
+### change branch name from "master" to "main"
 git branch -M main
+### push to github
 git push -u origin main
 
+### create README file in github, then
+### pull from github
+git pull git@github.com:___username____/__reponame__.git main
 
-# I recommend a youtube video for this one: 
+
+# I recommend a youtube video for git status (*any* youtube video): 
 # https://www.youtube.com/watch?v=USjZcfj8yxE @ 3:50
-
 git status
