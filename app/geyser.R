@@ -40,8 +40,7 @@ server <- function(input, output) {
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
         # draw the histogram with the specified number of bins
-        #hist(x, breaks = bins, col = 'darkgrey', border = 'white')
-        plot(faithful2$eruptions, faithful2$ waiting.minute, type = "h")
+        hist(x, breaks = bins, col = 'purple', border = 'white')
     })
 }
 
