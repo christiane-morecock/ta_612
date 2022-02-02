@@ -64,3 +64,9 @@ git pull git@github.com:___username____/__reponame__.git main
 # I recommend a youtube video for git status (*any* youtube video): 
 # https://www.youtube.com/watch?v=USjZcfj8yxE @ 3:50
 git status
+
+##
+git fetch git@github.com:tpyork/hgen-612.git main
+git checkout FETCH_HEAD -- ./R/05_flexdashboard_student.Rmd # file path
+
+
